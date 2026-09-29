@@ -1,0 +1,124 @@
+
+.logos-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.logo-box {
+    text-align: center;
+}
+
+.flower-pos {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+}
+
+.flower-pos .f-base {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: 25px;
+    left: 25px;
+    background-color: #9a80c7;
+    border-radius: 35px;
+    z-index: 1;
+}
+
+.flower-pos .petal {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #fcc6dd;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.flower-pos .petal.top {
+    top: 0;
+    left: 65px;
+}
+
+.flower-pos .petal.bottom {
+    bottom: 0;
+    left: 65px;
+}
+
+.flower-pos .petal.left {
+    left: 0;
+    top: 65px;
+}
+
+.flower-pos .petal.right {
+    right: 0;
+    top: 65px;
+}
+
+
+.flower-pos .f-core {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 72.5px;
+    left: 72.5px;
+    background-color: #8c73b8;
+    border-radius: 18px;
+    z-index: 3;
+}
+
+
+.flower-trans {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+}
+
+.flower-trans .f-base {
+    width: 170px;
+    height: 170px;
+    background-color: #9a80c7;
+    border-radius: 35px;
+    transform: translate(25px, 25px);
+}
+
+.flower-trans .petal {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #fcc6dd;
+    border-radius: 50%;
+    top: 65px;
+    left: 65px;
+}
+
+
+.flower-trans .p-up {
+    transform: translateY(-65px);
+}
+
+.flower-trans .p-down {
+    transform: translateY(65px);
+}
+
+.flower-trans .p-left {
+    transform: translateX(-65px);
+}
+
+.flower-trans .p-right {
+    transform: translateX(65px);
+}
+
+.flower-trans .f-core {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 0;
+    left: 0;
+    background-color: #8c73b8;
+    border-radius: 18px;
+    transform: translate(72.5px, 72.5px);
+}

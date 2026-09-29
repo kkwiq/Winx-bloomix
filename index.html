@@ -5,12 +5,60 @@
     <meta name="keywords" content="квітковий магазин, доставка квітів, букети, авторська флористика">
     <meta name="description" content="Онлайн-магазин  квітів та авторських букетів.">
     <title>Project of IS-41 group student Karina Prokoshina, flower shop "Winx: Bloomix"</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .delivery-table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .delivery-table td {
+            border: 1.5px solid #4a4a4a;
+            padding: 12px 10px;
+            font-size: 14px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .delivery-table tr.row-first {
+            background-color: #fcc6dd;
+            color: #2b2b2b;
+        }
+
+        .delivery-table tr.row-second {
+            background-color: #bfddc4;
+            color: #203324;
+        }
+
+        .delivery-table tr.row-first:hover {
+            background-color: #bfddc4;
+            color: #203324;
+        }
+
+        .delivery-table tr.row-second:hover {
+            background-color: #fcc6dd;
+            color: #2b2b2b;
+        }
+
+        .delivery-table tr.row-third,
+        .delivery-table tr.row-bottom {
+            background-color: #ffffff;
+            color: #333333;
+        }
+    </style>
 </head>
 <body>
     <h2>Послуги студії флористики Winx: Bloomix</h2>
-    <p>Ми пропонуємо створення авторських букетів зі свіжозрізаних квітів, стильних квіткових боксів, кошиків та монобукетів з індивідуальним підбором палітри і швидкою адресною доставкою.</p>
-    <p>Наша команда здійснює комплексне флористичне оформлення свят і весіль, фітодизайн та озеленення інтер'єрів офісів і ресторанів, а також оформлення регулярної щотижневої квіткової підписки для бізнесу.</p>
-
+    <p>Ми пропонуємо створення авторських букетів зі свіжозрізаних квітів, 
+        стильних квіткових боксів, кошиків та монобукетів з індивідуальним підбором палітри і швидкою адресною доставкою.</p>
+    <p>Наша команда здійснює комплексне флористичне оформлення свят і весіль, 
+        фітодизайн та озеленення інтер'єрів офісів і ресторанів, а також оформлення 
+        регулярної щотижневої квіткової підписки для бізнесу.</p>
 
     <ul>
         <li>Півонії сортові</li>
@@ -25,7 +73,6 @@
         <li>Гіпсофіли різнокольорові</li>
     </ul>
 
-    <!-- Нумерований список: покроковий шлях від ідеї до вручення букета -->
     <ol>
         <li>Виникнення ідеї подарувати емоції та вибір улюблених квітів коханої.</li>
         <li>Оформлення замовлення на сайті з можливістю додати авторську листівку з теплими словами.</li>
@@ -34,13 +81,71 @@
         <li>Несподіване та зворушливе вручення букета коханій, наповнене щирими почуттями та посмішкою.</li>
     </ol>
 
-    <p>Історія квіткового простору Winx: Bloomix розпочалася у затишному куточку Подолу з великої пристрасті до живої природи та естетики. Спочатку це була невелика експериментальна студія, де ми створювали камерні композиції для друзів, підбираючи кожну стеблину вручну на світанку. Згодом щира увага до деталей, збереження природної свіжості квітів без зайвого пластикового пакування та прагнення дарувати не просто букети, а теплі емоції перетворили нашу майстерню на улюблене місце поціновувачів гармонійної, витонченої флористики.</p>
-
-    <img src="shop-photo.png" alt="Квіткова майстерня Winx: Bloomix" width="600">
+    <p>Історія квіткового простору Winx: Bloomix розпочалася у затишному куточку Подолу з великої пристрасті 
+        до живої природи та естетики. Спочатку це була невелика експериментальна студія, де ми створювали 
+        камерні композиції для друзів, підбираючи кожну стеблину вручну на світанку. Згодом щира увага до деталей, 
+        збереження природної свіжості квітів без зайвого пластикового пакування та прагнення дарувати не просто букети, 
+        а теплі емоції перетворили нашу майстерню на улюблене місце поціновувачів гармонійної, витонченої флористики.</p>
 
     <a href="https://uaserials.com/1597-klub-vinks-shkola-charivnyc-2004.html" target="_blank" rel="noopener noreferrer">
         <img src="shop-photo.png" alt="Квіткова майстерня Winx: Bloomix — натхненна магією Вінкс" width="600">
     </a>
 
+    <hr style="margin: 40px 0; border: 1px dashed #ccc;">
+
+    <section class="delivery-section">
+        <h2>Тарифи та зони доставки «Winx: Bloomix»</h2>
+        <table class="delivery-table">
+            <tr class="row-first">
+                <td rowspan="3">Експрес-доставка (Київ)</td>
+                <td>Правий берег</td>
+                <td rowspan="3">Нічна доставка (22:00 - 08:00)</td>
+                <td>Печерський р-н</td>
+            </tr>
+            <tr class="row-second">
+                <td>Лівий берег</td>
+                <td>Подільський р-н</td>
+            </tr>
+            <tr class="row-third">
+                <td>Передмістя (до 20 км)</td>
+                <td>Оболонський р-н</td>
+            </tr>
+            <tr class="row-bottom">
+                <td>Самовивіз зі студії</td>
+                <td colspan="2">Безкоштовна доставка для замовлень від 2500 грн</td>
+                <td>Кур'єр на авто</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="flower-logos">
+        <h2>Фірмові емблеми квіткарні</h2>
+        <div class="logos-wrapper">
+            <div class="logo-box">
+                <h3>position</h3>
+                <div class="flower-pos">
+                    <div class="f-base"></div>
+                    <div class="petal top"></div>
+                    <div class="petal bottom"></div>
+                    <div class="petal left"></div>
+                    <div class="petal right"></div>
+                    <div class="f-core"></div>
+                </div>
+            </div>
+
+            <div class="logo-box">
+                <h3>transform</h3>
+                <div class="flower-trans">
+                    <div class="f-base"></div>
+                    <div class="petal p-up"></div>
+                    <div class="petal p-down"></div>
+                    <div class="petal p-left"></div>
+                    <div class="petal p-right"></div>
+                    <div class="f-core"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </body>
 </html>
